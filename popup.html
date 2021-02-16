@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            padding: 5px;
+        }
+        
+        .grid-item {
+            padding: 10px 20px 5px 20px;
+            text-align: center;
+        }
+        
+        .icon {
+            object-fit: cover;
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+        }
+        
+        .screen {
+            width: 370px;
+        }
+        
+        .flex-column {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="screen">
+        <div class="grid-container">
+            <div class="flex-column">
+                <a href="https://portswigger.net/web-security/all-labs">
+                    <div class="grid-item">
+                        <img class="icon" src="/images/portswigger.png" alt="" />
+                    </div>
+                    <div><span>Labs<br>PortSwigger</span></div>
+                </a>
+            </div>
+            <div class="flex-column">
+                <a href="https://portswigger.net/web-security/sql-injection/cheat-sheet">
+                    <div class="grid-item">
+                        <img class="icon" src="/images/sqli.png" alt="" />
+                    </div>
+                    <div><span>SQLi<br>cheatsheet</span></div>
+                </a>
+            </div>
+            <div class="flex-column">
+                <a href="https://portswigger.net/web-security/cross-site-scripting/cheat-sheet">
+                    <div class="grid-item">
+                        <img class="icon" src="/images/xss.png" alt="" />
+                    </div>
+                    <div><span>XSS<br>cheatsheet</span></div>
+                </a>
+            </div>
+            <div class="flex-column">
+                <a href="https://twitter.com/XssPayloads">
+                    <div class="grid-item">
+                        <img class="icon" src="/images/payload-xss.png" alt="" />
+                    </div>
+                    <div><span>XSS<br>Payloads</span></div>
+                </a>
+            </div>
+        </div>
+        <hr style="background-color:#ccc; width: 300px">
+        <p style="text-align:center; color:#999">Copyrights © <a href="https://infosecnote.com" style="font-weight: bold">infosecnote.com</a></p>
+    </div>
+    <script src="/js/myApp.js"></script>
+</body>
+
+</html>

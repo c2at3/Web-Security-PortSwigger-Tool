@@ -1,0 +1,27 @@
+{
+    "name": "Web Security PortSwigger Tool",
+    "version": "1.0.01",
+    "description": "The extension integrates cheat sheets and Encryption/Decryption tools for web application penetration testing and for resolving Portswigger's Labs.",
+    "manifest_version": 2,
+    "icons": {
+        "128": "/images/128.png",
+        "48": "/images/48.png",
+        "16": "/images/16.png"
+    },
+    "browser_action": {
+        "default_icon": "/images/16.png",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "css": ["css/myStyle.css"],
+        "js": ["js/content.js"]
+    }],
+    "background": {
+        "scripts": ["/js/contextMenus.js"],
+        "permissions": false
+    },
+    "permissions": [
+        "contextMenus"
+    ]
+}
